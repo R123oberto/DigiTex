@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html><!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DigiTex | Empresa de Arte Digital</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0d1117;
+      color: #e6edf3;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: #161b22;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      color: #00bfff;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    nav a {
+      color: #e6edf3;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00bfff;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      background: linear-gradient(135deg, #0d1117, #161b22);
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #9da5b4;
+    }
+
+    .btn {
+      margin-top: 30px;
+      padding: 12px 25px;
+      background: #00bfff;
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0099cc;
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    .sobre, .projetos, .contato {
+      text-align: center;
+    }
+
+    .projetos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: #161b22;
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px #00bfff;
+    }
+
+    footer {
+      background: #0d1117;
+      padding: 30px;
+      text-align: center;
+      color: #9da5b4;
+      font-size: 0.9rem;
+      border-top: 1px solid #161b22;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>DigiTex</h1>
+    <nav>
+      <a href="#mvv">Missão & Visão</a>
+      <a href="#beneficios">Benefícios</a>
+      <a href="#promocao">Promoção</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Bem-vindo à DigiTex 👋</h2>
+    <p>Empresa de Arte Digital que transforma conceitos em experiências visuais impactantes.</p>
+    <button class="btn" onclick="scrollToSection('contato')">Fale Conosco</button>
+  </section>
+
+  <section id="mvv" class="sobre">
+    <h2>Missão, Visão e Valores</h2>
+    <div class="projetos-grid">
+      <div class="card">
+        <h3>🎯 Missão</h3>
+        <p>Nosso objetivo é dominar o mercado de arte digital, visando sustentabilidade e crescimento contínuo.</p>
+      </div>
+      <div class="card">
+        <h3>🔭 Visão</h3>
+        <p>Ser referência em soluções criativas e tecnológicas, promovendo inovação com responsabilidade.</p>
+      </div>
+      <div class="card">
+        <h3>💎 Valores</h3>
+        <p>Valorizamos a qualidade do nosso produto e da nossa marca, com compromisso, criatividade e responsabilidade.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="beneficios" class="sobre">
+    <h2>Benefícios</h2>
+    <div class="projetos-grid">
+      <div class="card">
+        <h3>🩺 Saúde</h3>
+        <p>Planos de saúde e odontológico</p>
+      </div>
+      <div class="card">
+        <h3>🛡️ Segurança</h3>
+        <p>Seguro de vida</p>
+      </div>
+      <div class="card">
+        <h3>💰 Reconhecimento</h3>
+        <p>Participação nos lucros e resultados (PLR)</p>
+      </div>
+      <div class="card">
+        <h3>🏋️ Bem-estar</h3>
+        <p>Auxílio-academia e programas de bem-estar corporativo</p>
+      </div>
+      <div class="card">
+        <h3>💻 Tecnologia</h3>
+        <p>Acesso a softwares e equipamentos</p>
+      </div>
+      <div class="card">
+        <h3>⏰ Flexibilidade</h3>
+        <p>Horário flexível e home office</p>
+      </div>
+      <div class="card">
+        <h3>🎉 Reconhecimento Pessoal</h3>
+        <p>Day off de aniversário</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="promocao" class="sobre">
+    <h2>Critérios para Promoção</h2>
+    <div class="projetos-grid">
+      <div class="card">
+        <h3>📈 Bom Desempenho</h3>
+        <p>Resultados consistentes e alta qualidade nas entregas.</p>
+      </div>
+      <div class="card">
+        <h3>⏳ Tempo de Casa</h3>
+        <p>Histórico de dedicação e permanência na empresa.</p>
+      </div>
+      <div class="card">
+        <h3>🤝 Entrosamento com a Equipe</h3>
+        <p>Colaboração, empatia e bom relacionamento com colegas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="sobre">
+    <h2>Sobre a DigiTex</h2>
+    <p>A DigiTex é uma empresa de arte digital especializada em criar experiências visuais únicas, combinando tecnologia, design e criatividade para transformar ideias em realidade.</p>
+  </section>
+
+  <section id="contato" class="contato">
+    <h2>Contato</h2>
+    <p>Entre em contato com a DigiTex para parcerias ou projetos!</p>
+    <button class="btn" onclick="alert('Contato: contato@digitex.com')">Enviar Mensagem</button>
+  </section>
+
+  <footer>
+    <p>© 2025 DigiTex | Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
